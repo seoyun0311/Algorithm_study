@@ -7,7 +7,7 @@ food = [list(map(int, input().split())) for _ in range(N)]
 def recur(idx, sin, sun, use):
   global answer
 
-  if idx == N:
+  if idx == N: 
     if use > 0:
       answer = min(answer, abs(sin-sun))
     return
